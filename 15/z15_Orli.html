@@ -3,11 +3,15 @@
 
 </head>
 <body>
-    <div>
+    <div style="font-size: 40px;">
         <script>
+            function okno_zamknij() {
+                window.close()
+            }
             var m_orl=parseFloat(prompt("m='.'"));
             document.write("1/"+m_orl+" = 1/"+(m_orl*2)+" + 1/"+(m_orl*2));
         </script>
     </div>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
 </body>
 </html>
