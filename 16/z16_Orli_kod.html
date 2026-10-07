@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    
+</head>
+
+<body>
+    <textarea cols="150" rows="50" style="align-self: center;">
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div style="color: red; font-size: 50px;">
+            <script>
+                // Michał Orliński  2P   07.10.2026
+                // Zadanie 16 
+                function okno_zamknij() {
+                    window.close()
+                }
+                var A_orl = parseFloat(prompt("A=", ""));
+                var B_orl = parseFloat(prompt("B=", ""));
+                document.write("Wczytane liczby: A="+A_orl+" B="+B_orl+"<br>");
+                document.write("("+A_orl+" + "+B_orl+")^3 = ")
+                document.write(A_orl+"^3 + ")
+                document.write("3*(("+A_orl+")^2)*("+B_orl+") + ")
+                document.write("3*("+A_orl+")*(("+B_orl+")^2) + ")
+                document.write(B_orl+"^3 = ")
+                document.write((A_orl*A_orl*A_orl)+" + "+3*(A_orl*A_orl)*(B_orl)+" + "+3*(A_orl)*(B_orl*B_orl)+" + "+(B_orl*B_orl*B_orl+" = "))
+                document.write((A_orl*A_orl*A_orl)+3*(A_orl*A_orl)*(B_orl)+3*(A_orl)*(B_orl*B_orl)+(B_orl*B_orl*B_orl))
+            </script>
+        </div>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+    </body>
+</html>
+    </textarea>
+</body>
+
+</html>
