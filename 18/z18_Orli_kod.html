@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    
+</head>
+
+<body>
+    <textarea cols="150" rows="50" style="align-self: center;">
+<!DOCTYPE html>
+
+<head>
+    <title> Użycie fukcji </title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div style="color:navy;font-size:50px;">
+        <script language="JavaScript">
+            var a = parseFloat(prompt("a=", ""));
+            var b = parseFloat(prompt("b=", ""));
+            function suma_orl(a, b) {
+                return a + b;
+            }
+            function odejmowanie_orl(a,b){
+                return a-b;
+            }
+            function mnozenie_orl(a,b){
+                return a*b;
+            }
+            function od_kwadratu_orl(a, b){
+                var wynik_orl = [a*a, b*b];
+                return a+"^2="+wynik_orl[0]+"<br>"+b+"^2="+wynik_orl[1];
+            }
+            function reszta_z_dzielenia_a_przez_b_orl(a,b){
+                return a%b;
+            }
+            document.write("suma=" + suma_orl(a, b) + "<br>");
+            document.write("różnica=" + odejmowanie_orl(a, b) + "<br>");
+            document.write("iloczyn=" + mnozenie_orl(a, b) + "<br>");
+            document.write("kwadrat:<br>" + od_kwadratu_orl(a, b) + "<br>");
+            document.write("reszta z dzielenia przez b=" + reszta_z_dzielenia_a_przez_b_orl(a, b) + "<br>");
+        </script>
+    </div>
+</body>
+
+</html>
+    </textarea>
+</body>
+
+</html>

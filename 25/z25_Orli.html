@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var N0_orl=parseFloat(prompt("N0="))
+            var t_orl=parseFloat(prompt("t="))
+            var T1na2_orl=parseFloat(prompt("T1/2="))
+        
+            var lambda_orl= Math.log(2)/T1na2_orl;
+            var N_orl = N0_orl*Math.pow(Math.E,-lambda_orl*t_orl)
+
+            document.write("N0="+N0_orl+"[sztuk]")
+            document.write("t="+t_orl+"[lat]")
+            document.write("T1/2="+T1na2_orl+"[lat]")
+            document.write("Lambda="+lambda_orl.toFixed(7)+"[1/rok]")
+            document.write("N="+N_orl+"[sztuk]")
+        </script>
+    </body>
+</html>
